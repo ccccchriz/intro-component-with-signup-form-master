@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="signup">
+        <div>
+          <h2 class="signup__title">Learn to code by watching others</h2>
+          <p class="signup__paragraph">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <p class="signup__info">Try it free 7 days then $20/mo. thereafter</p>
+        <div class="signup__field">
+          <form action="" id="signup__form">
+            <label for="firstname" class="visually-hidden">first name</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="First Name"
+              class="signup__input"
+            />
+            <p id="firstname-hint" class="signup__hint hidden">
+              First Name cannot be empty!
+            </p>
+            <label for="lastname" class="visually-hidden">last name</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last Name"
+              class="signup__input"
+            />
+            <p id="lastname-hint" class="signup__hint hidden">
+              First Name cannot be empty!
+            </p>
+            <label for="email" class="visually-hidden">email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              class="signup__input"
+            />
+            <p id="email-hint" class="signup__hint hidden">
+              First Name cannot be empty!
+            </p>
+            <label for="password" class="visually-hidden">password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              class="signup__input"
+            />
+            <p id="password-hint" class="signup__hint hidden">
+              First Name cannot be empty!
+            </p>
+            <button type="submit" class="signup__submit">
+              Claim your free trial
+            </button>
+          </form>
+          <p class="signup__agree">
+            By clicking the button, you are agreeing to our
+            <a href="" class="signup__tos">Terms and Services</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
