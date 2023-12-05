@@ -57,4 +57,6 @@ form.addEventListener("submit", (e) => {
   if (isBadData)
     return (liveError.textContent =
       "Your form has errors. Please fix them and submit again");
+
+  setTimeout(() => form.reset(), 500);
 });
