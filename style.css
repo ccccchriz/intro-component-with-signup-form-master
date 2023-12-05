@@ -74,3 +74,57 @@ h6 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --clr-primary-red: hsl(0, 100%, 74%);
+  --clr-primary-green: hsl(154, 59%, 51%);
+
+  --clr-accent-blue: hsl(248, 32%, 49%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(246, 25%, 77%);
+  --clr-neutral-300: hsl(249, 10%, 26%);
+
+  --ff-base: "Poppins", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+main {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
