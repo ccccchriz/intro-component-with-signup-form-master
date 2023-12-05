@@ -31,7 +31,7 @@
           <strong>Try it free 7 days</strong> then $20/mo. thereafter
         </p>
         <div class="signup__field">
-          <form action="" id="signup__form">
+          <form action="" id="signup__form" novalidate>
             <label for="firstname" class="visually-hidden">first name</label>
             <input
               type="text"
@@ -40,9 +40,7 @@
               placeholder="First Name"
               class="signup__input"
             />
-            <p id="firstname-hint" class="signup__hint hidden">
-              First Name cannot be empty!
-            </p>
+            <p id="firstname-hint" class="signup__hint"></p>
             <label for="lastname" class="visually-hidden">last name</label>
             <input
               type="text"
@@ -51,9 +49,7 @@
               placeholder="Last Name"
               class="signup__input"
             />
-            <p id="lastname-hint" class="signup__hint hidden">
-              First Name cannot be empty!
-            </p>
+            <p id="lastname-hint" class="signup__hint"></p>
             <label for="email" class="visually-hidden">email</label>
             <input
               type="email"
@@ -62,9 +58,7 @@
               placeholder="Email Address"
               class="signup__input"
             />
-            <p id="email-hint" class="signup__hint hidden">
-              First Name cannot be empty!
-            </p>
+            <p id="email-hint" class="signup__hint"></p>
             <label for="password" class="visually-hidden">password</label>
             <input
               type="password"
@@ -73,9 +67,12 @@
               placeholder="Password"
               class="signup__input"
             />
-            <p id="password-hint" class="signup__hint hidden">
-              First Name cannot be empty!
-            </p>
+            <p id="password-hint" class="signup__hint"></p>
+            <div
+              aria-live="assertive"
+              id="signup__error"
+              class="visually-hidden"
+            ></div>
             <button type="submit" class="signup__submit">
               Claim your free trial
             </button>
@@ -87,5 +84,6 @@
         </div>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
