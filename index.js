@@ -55,7 +55,10 @@ form.addEventListener("submit", (e) => {
   isBadData = validateInput(password, form);
 
   if (isBadData)
-    return (liveError.textContent =
-      "Your form has errors. Please fix them and submit again");
-  else setTimeout(() => form.reset(), 500);
+    liveError.textContent =
+      "Your form has errors. Please fix them and submit again";
+  else {
+    setTimeout(() => form.reset(), 500);
+    liveError.textContent = "Form successfully submited.";
+  }
 });
